@@ -3,8 +3,8 @@ import asyncio
 import re
 import os
 
-source_token = os.environ['BOTTOKEN']
-target_token = os.environ['MYTOKEN']
+source_token = os.environ['${{secrets.MYTOKEN}}']
+target_token = os.environ['${{secrets.BOTTOKEN}}']
 source_channel_id = int(os.environ['951935462447149109'])
 target_channel_id = int(os.environ['979764554441564173'])
 
